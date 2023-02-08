@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light_gray: hsl(212, 45%, 89%);
+  --grayish_blue: hsl(220, 15%, 55%);
+  --dark_blue: hsl(218, 44%, 22%);
+  --mobile-size: 375px;
+  --desktop-size: 1440px;
+  --font-size-paragraph: 15px;
+  --font-family-outfit: "Outfit", sans-serif;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light_gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 340px;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.card .card-text {
+  margin-top: 1rem;
+}
+
+.card .card-text h2 {
+  font-family: var(--font-family-outfit);
+  font-weight: var(--font-weight-700);
+  padding-bottom: 1rem;
+  color: var(--dark_blue);
+}
+
+.card .card-text p {
+  color: var(--grayish_blue);
+  font-size: var(--font-size-paragraph);
+  font-family: var(--font-family-outfit);
+  font-weight: var(--font-weight-400);
+  padding-bottom: 1rem;
+}
